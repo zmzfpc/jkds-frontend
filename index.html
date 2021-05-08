@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/BigData.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/index01.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <link href="js/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="js/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css" />
+    <link href="css/Security_operation.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="js/artDialog/skins/default.css" type="text/css"/>
+    <script src="js/laydate.js"></script>
+    <script src="js/Home_page.js"></script>
+    <meta charset="UTF-8">
+    <title>公交司机驾驶安全平台</title>
+
+</head>
+<body >
+<div class="data_bodey">
+    <div class="index_nav" >
+        <ul style="height: 30px; margin-bottom: 0px;">
+            <li class="l_left total_chose_fr nav_active">实时监测</li>
+           
+    <div class="index_tabs" >
+        <!--安防运作-->
+        <div class="inner" style="height: 109%;">
+
+            <div class="left_cage">
+           
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 9% !important; height: 30%;">
+                    <video autoplay="autoplay" loop="loop" class="dataAllBorder02 video_cage">
+                        <source class="video" title="主监控位" src="video/test_mv08.mp4"/>
+                    </video>
+                </div>
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 1.5% !important; height: 30%;">
+                    <div class="dataAllBorder02 video_cage">
+                        <video autoplay="autoplay" loop="loop" class="dataAllBorder02 video_cage">
+                        <source class="video" title="主监控位" src="video/test_mv10.mp4"/>
+                    </video>
+                        
+                        <!--<video autoplay="autoplay" loop="loop" class="video_around video_around_chose" title="循环监控01" style="margin-right: 1%; margin-bottom: 1%">-->
+                            <!--<source class="video" title="主监控位" src="video/video.jpg"/>-->
+                        <!--</video>-->
+                        <!--<video autoplay="autoplay" loop="loop"  class="video_around" title="循环监控02"  style="margin-bottom: 1%">-->
+                            <!--<source class="video" title="主监控位" src="video/test_mv03.mov"/>-->
+                        <!--</video>-->
+                        <!--<video autoplay="autoplay" loop="loop"  class="video_around" title="循环监控03" style="margin-right: 1%">-->
+                            <!--<source class="video" title="主监控位" src="video/test_mv03.mov"/>-->
+                        <!--</video>-->
+                        <!--<video autoplay="autoplay" loop="loop"  class="video_around" title="循环监控04">-->
+                            <!--<source class="video" title="主监控位" src="video/test_mv05.mov"/>-->
+                        <!--</video>-->
+                    </div>
+                </div>
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 1% !important; height: 37%">
+                    <div class="dataAllBorder02" id="cage_cl">
+                        <div class="analysis">当前班次异常行为次数：</div>
+                        <div class="depart_number_box">
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">无故转弯：</li>
+                                <li class="depart_number">1</li>
+                            </ul>
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">离开座位：</li>
+                                <li class="depart_number">0</li>
+                            </ul>
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">高速喝水:</li>
+                                <li class="depart_number">4</li>
+                            </ul>
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">擦玻璃：</li>
+                                <li class="depart_number">1</li>
+                            </ul>
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">摸脸:</li>
+                                <li class="depart_number">10</li>
+                            </ul>
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">整理安全带:</li>
+                                <li class="depart_number">6</li>
+                            </ul>
+                            <ul class="depart_number_cage" style="margin-bottom: 0px;">
+                                <li class="depart_name">双手离开方向盘:</li>
+                                <li class="depart_number">4</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="dataAllBorder02 over_hide" id="cage_cl1" style="display: none">
+                        <div class="analysis">动作信息：</div>
+                        <ul class="location_msg_box">
+                            <li class="location_msg01 location_single">异常级别：<a href="#" style="color: #dc0000;">非常危险</a></li>
+                            <li class="location_msg02 location_single">异常原因：离开座位</a></li>
+                            <li class="location_msg02 location_double">发生时间：<a href="#" style="color: #cdd6db;">2020-07-14<br>18:03:52</a></li>
+                            <li class="location_msg01 location_double">地址：丰庄北路丰庄路</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center_cage">
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 6% !important; height: 62.7%; position: relative;">
+                   <div class="dataAllBorder02 video_cage">
+                        <video autoplay="autoplay" loop="loop" class="dataAllBorder02 video_cage">
+                        <source class="video" title="主监控位" src="video/test_mv03.mp4"/>
+                    </video>
+                    </div>
+                </div>
+
+                <div class="dataAllBorder01 cage_cl" style="margin-top: 0.6% !important; height: 32.1%;">
+                    <div class="dataAllBorder02" id="map_title_innerbox">
+                        <div class="map_title_box">
+                            <div class="map_title_innerbox">
+                                <div class="map_title" style="background-image: url(img/second_title.png);">当前班次：嘉定113路</div>
+                            </div>
+                            <div >
+                                <select id="selLayer" style="width:100px;">
+                                    <option value="">车牌</option>
+                                    <option value="">线路</option>
+                                </select>
+                            </div>
+                        </div>
+                        <table id="table" style="width: 100%"></table>
+                    </div>
+
+                    <div class="dataAllBorder02" id="map_title_innerbox1" style="display: none; position: relative;">
+                        <div class="map_title_box">
+                            <div class="map_title_innerbox">
+                                <div class="map_title" style="background-image: url(img/second_title.png);">异常详细信息</div>
+                            </div>
+                        </div>
+                        
+                        <div class="table1">
+                        <table id="table1" style="width: 100%"></table>
+                        </div>
+                        <div class="table2" style=" display: none;">
+                        <table id="table2" style="width: 100%;"></table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right_cage">
+                <!--顶部切换位置-->
+                <div class="dataAllBorder01 cage_cl" style="margin-top:1.5% !important; height: 25%; position: relative;">
+                    <div class="dataAllBorder02" style="padding: 1.2%; overflow: hidden">
+
+                        <div class="message_scroll_box">
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">嘉定110路</span>
+                                    <span class="scroll_level scroll_level01">异常</span>
+                                    <a class="localize"></a>
+                                    <span class="scroll_timer">20-07-14/18:09:20</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_title">浏翔公路蕰北路</a>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_msg">c3喝水</a>
+                                </div>
+                            </div>
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">嘉定109路</span>
+                                    <span class="scroll_level scroll_level01">异常</span>
+                                    <a class="localize"></a>
+                                    <span class="scroll_timer">20-07-14/18:09:21</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_title">绿园路曹安路</a>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_msg">c1异常转弯</a>
+                                </div>
+                            </div>
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">嘉定113路</span>
+                                    <span class="scroll_level scroll_level02">异常</span>
+                                    <a class="localize"></a>
+                                    <span class="scroll_timer">20-07-14/18:09:22</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_title">万镇路梅川路</a>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_msg">c7手离开方向盘</a>
+                                </div>
+                            </div>
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">嘉定120路</span>
+                                    <span class="scroll_level scroll_level03">异常</span>
+                                    <a class="localize"></a>
+                                    <span class="scroll_timer">20-07-14/18:09:23</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_title">鹤旋路金运路</a>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_msg">c2离开座位</a>
+                                </div>
+                            </div>
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">嘉定69路</span>
+                                    <span class="scroll_level scroll_level03">异常</span>
+                                    <a class="localize"></a>
+                                    <span class="scroll_timer">20-07-14/18:09:24</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_title">六里桥</a>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_msg">c2离开座位</a>
+                                </div>
+                            </div>
+                            <div class="message_scroll">
+                                <div class="scroll_top">
+                                    <span class="scroll_title">嘉定18路</span>
+                                    <span class="scroll_level scroll_level03">异常</span>
+                                    <a class="localize"></a>
+                                    <span class="scroll_timer">20-07-14/18:09:25</span>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_title">双单路云谷路</a>
+                                </div>
+                                <div class="msg_cage">
+                                    <a class="localize_msg">c2离开座位</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="scroll_tool_outbox">
+                        <div class="scroll_tool_box">
+                            <a class="scroll_tool" href="#">查看历史推送</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="dataAllBorder01 cage_cl check_increase" style=" margin-top: 1.5% !important;height: 77%;">
+                    <!--切换01-->
+                    <div class="dataAllBorder02 over_hide dataAllBorder20" id="over_hide">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 18%">线路</th>
+                                    <th>车牌号</th>
+                                    <th>驾驶员</th>
+                                    <th>当日异常行为次数</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>嘉定113</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>朱xx</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定113</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>朱xx</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定113</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>孙x</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定113</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>陈xx</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定113</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>赵xx</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定112</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>周xx</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定112</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>李xx</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定112</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>周xx</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定112</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>冯xx</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定111</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>王xx</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定111</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>钱xx</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定110</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>郑xx</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定110</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>吴xx</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定114</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>周xx</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定114</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>李xx</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定114</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>周xx</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定115</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>冯xx</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定115</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>王xx</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定116</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>钱xx</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定117</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>郑xx</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定117</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>吴xx</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定118</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>孙xx</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>嘉定118</td>
+                                    <td>沪Axxxxxx</td>
+                                    <td>陈xx</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </table>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+</div>
+
+<script src="js/echarts-all.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bstable/js/bootstrap.min.js"></script>
+<script src="js/bstable/js/bootstrap-table.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<script src="js/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5ieMMexWmzB9jivTq6oCRX9j&callback"></script>
+
+    <!--<script src="js/MainMap.js"></script>-->
+<script src="js/Home_page.js"></script>
+<script src="js/artDialog/artDialog.js"></script>
+<script src="js/artDialog/plugins/iframeTools.source.js"></script>
+<script>
+    var number;
+    $(function() {
+        if (window.screen.height <= 768) {
+            number = 4;
+        } else if (window.screen.height > 768 && window.screen.height <= 900) {
+            number = 6
+        } else if (window.screen.height > 1080) {
+            number = 8
+        }
+    });
+
+
+//    翻页模块
+    $(".tcdPageCode").createPage({
+        pageCount:5,
+        current:1,
+        backFn:function(p){}
+    });
+    $(".chemistry_tcdPageCode").createPage({
+    pageCount:4,
+    current:1,
+    backFn:function(p){}
+});
+    $(".enterprise_tcdPageCode").createPage({
+    pageCount:4,
+    current:1,
+    backFn:function(p){}
+});
+    $(".car_tcdPageCode").createPage({
+    pageCount:4,
+    current:1,
+    backFn:function(p){}
+});
+
+    $(function () {
+        $(".tit02Diva a").each(function (index) {
+            $(this).on("click",function () {
+                $(".data_map").eq(index).fadeIn().siblings(".data_map").stop().hide();
+                $(this).prev('i').removeClass('i_crlieAction');
+                $(this).siblings('a').prev('i').addClass('i_crlieAction');
+
+            })
+        });
+        BootstrapTable();
+        Echarts();
+        $("#fresh_tool").click(function(event){
+            event.stopPropagation();
+            cancel();
+        })
+
+    });
+    function EventClick(){
+        $(".check_increase").removeClass("check_increase_act");
+        $("#over_hide1").show().siblings().hide();
+        $(".check_decrease").show();
+        $("#cage_cl").hide();
+        $("#map_title_innerbox").hide();
+        $("#cage_cl1").show();
+//        $("#over_hide").show();
+        $("#map_title_innerbox1").show();
+        $(".addition_check_in").hide();
+        $("#car_check_in").hide();
+        BootstrapTable();
+    }
+    function cancel(e){
+        $(".check_increase").removeClass("check_increase_act");
+        $("#over_hide").show().siblings().hide();
+        $(".check_decrease").show();
+        $("#cage_cl").show();
+        $("#cage_cl1").hide();
+//        $("#cage_cl").show();
+//        $("#over_hide1").show();
+//        $("#map_title_innerbox").show();
+        BootstrapTable();
+    }
+
+    //    地址检索
+    $(".addition_check_btn").click(function () {
+        $(".check_increase").addClass("check_increase_act");
+        $(".check_decrease").hide()
+        $(".addition_check_in").show().siblings().hide()
+    });
+
+//    危化品检索
+    function chemistryCheck() {
+        $(".check_increase").addClass("check_increase_act");
+        $(".check_decrease").hide()
+        $("#chemistry_check_in").show().siblings().hide()
+    }
+
+    //    企业检索
+    function enterpriseCheck() {
+        $(".check_increase").addClass("check_increase_act");
+        $(".check_decrease").hide()
+        $("#enterprise_check_in").show().siblings().hide()
+    }
+
+    //    车辆检索
+    function carCheck() {
+        $(".check_increase").addClass("check_increase_act");
+        $(".check_decrease").hide()
+        $("#car_check_in").show().siblings().hide()
+    }
+
+    function BootstrapTable() {
+        $('#table').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/DGCar.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: number,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams: null,
+            columns: [
+//                {
+//                    title: "车辆编号",
+//                    field: 'id',
+//                    width:80,
+//                    align: 'center',
+//                    valign: 'middle'
+//                },
+                {
+                    title: '车牌号',
+                    field: 'carno',
+                    width:90,
+                    align: 'center',
+                    valign: 'middle'
+                },
+              
+
+                {
+                    title: '驾驶员',
+                    field: 'content',
+                    align: 'center'
+                },
+
+                {
+                   
+                    formatter: function (value, row) {
+                        var e = '<a  href="javascript:void(0)" title="" onclick="showCarDetai()">查看详情</a> ';
+                        var d = '<a  href="javascript:void(0)" title="" onclick="analiysis(\'' + row.id + '\')">车辆定位</a> ';
+                        return e + d;
+                    }
+                }
+
+            ]
+        });
+        $('#table1').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/note1.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: number,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams: null,
+            columns: [
+                {
+                    title: "异常行为",
+                    field: 'id',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '发生车辆',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '发生时间',
+                    field: 'type',
+                    align: 'center',
+                    valign: 'middle'
+                },
+
+                {
+                    title: '地点',
+                    field: 'person',
+                    align: 'center'
+                }
+
+            ]
+        });
+        $('#table2').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/note2.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: number,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams: null,
+            columns: [
+                {
+                    title: "异常行为",
+                    field: 'id',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '发生车辆',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '发生时间',
+                    field: 'type',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '地点',
+                    field: 'person',
+                    align: 'center'
+                }
+
+            ]
+        });
+    }
+
+    function Echarts() {
+        var myChart = echarts.init($("#container_huan")[0]);
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data:['民用爆炸','射钉器材','危化品','寄递物流','旅店'],
+                textStyle:{
+                    color:"#e9ebee"
+                }
+            },
+            series: [
+                {
+                    name:'行业数据',
+                    type:'pie',
+                    center:['80%','50%'],
+                    radius: ['50%', '80%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: false
+                            },
+                            labelLine: {
+                                show: false
+                            }
+                        }
+                    },
+                    data:[
+                        {value:335, name:'民用爆炸'},
+                        {value:310, name:'射钉器材'},
+                        {value:234, name:'危化品'},
+                        {value:135, name:'寄递物流'},
+                        {value:1548, name:'旅店'}
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+
+
+    function TimeControl(){
+        $(".message_scroll_box").animate({marginTop:96},800,
+                function(){
+                    $(".message_scroll_box").css({marginTop:0});    //把顶部的边界清零
+                    $(".message_scroll_box .message_scroll:first").before($(".message_scroll_box .message_scroll:last"));    //在第一个新闻后面插入最后一个新闻
+
+                });
+    }
+    var T=setInterval(TimeControl,2300);    //开始定时
+    $(".message_scroll_box").mouseenter(function(){
+        clearInterval(T);    //停止定时
+    })
+            .mouseleave(function(){
+                T=setInterval(TimeControl,2500);    //再次定时
+            })
+
+</script>
+
+<!--轨迹回放时间日期选择-->
+<script>
+    !function(){
+        laydate.skin('danlan');//切换皮肤，请查看skins下面皮肤库
+        laydate({elem: '#demo'});
+        laydate({elem: '#demo1'});//绑定元素
+    }();
+    //日期范围限制
+    var start = {
+        elem: '#start',
+        format: 'YYYY-MM-DD',
+        min: laydate.now(), //设定最小日期为当前日期
+        max: '2099-06-16', //最大日期
+        istime: true,
+        istoday: false,
+        choose: function(datas){
+            end.min = datas; //开始日选好后，重置结束日的最小日期
+            end.start = datas //将结束日的初始值设定为开始日
+        }
+    };
+
+    var end = {
+        elem: '#end',
+        format: 'YYYY-MM-DD',
+        min: laydate.now(),
+        max: '2099-06-16',
+        istime: true,
+        istoday: false,
+        choose: function(datas){
+            start.max = datas; //结束日选好后，充值开始日的最大日期
+        }
+    };
+    laydate(start);
+    laydate(end);
+    function edit() {
+        layer.open({
+            type: 2,
+            title: '存储详情',
+            shade: 0.5,
+            skin: 'layui-layer-rim',
+            area: ['700px', '400px'],
+            shadeClose: true,
+            closeBtn: 1,
+            content: 'saveFindTail.html'
+        });
+    }
+</script>
+<script>
+    // 百度地图API功能
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));
+    var mapStyle={
+        style:"dark"
+    };
+    map.setMapStyle(mapStyle);
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
